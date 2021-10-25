@@ -23,4 +23,7 @@ Dans le répertoire , vous trouverez :
      utilise un nombre très réduit de propositions pour la vitesse.
 
 
-## Conguration du modèle
+## Modèle faster RCNN Inception V2
+
+
+[faster_inception_v2](http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2018_01_28.tar.gz)
