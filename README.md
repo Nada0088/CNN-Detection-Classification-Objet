@@ -1,38 +1,26 @@
-# Apprentissage automatique
+# Detection d'objet Model
+Un de modèle de détection pré-entraînés sur l'ensemble de données **[Kitti dataset](http://www.cvlibs.net/datasets/kitti/)** et l'ensemble de données **[Open Images dataset](https://storage.googleapis.com/openimages/web/index.html)**.
+Ce modèle peuvent être utiles pour l'inférence prête à l'emploi si vous êtes intéressé par les catégories déjà présentes dans ces ensembles de données. Ils sont également utiles pour initialiser vos modèles lors de l'entraînement sur de nouveaux ensembles de données.
 
-L'apprentissage automatique (Machine learning) consiste à extraire des connais-
-sances à partir de données. C'est un domaine de recherche situé à l'intersection de la
-statistique, de l'intelligence articielle et de l'informatique. Il est également connu
-sous le nom d'analyse prédictive ou d'apprentissage statistique. Au lieu d'expliquer à un ordinateur 
-avec précision comment résoudre un problème, l'apprentissage
-automatique p ermet de lui apprendre à résoudre un problème par lui-même.
+Vous pouvez décompresser le fichier tar.gz via, par exemple :
 
-## Types d'apprentissage
-Les algorithmes d'apprentissage p euvent se catégoriser selon le typ e d'appren-
-tissage qu'ils emploient :
-- **L'apprentissage non-supervisé**
-Le contexte non sup ervisé est celui où l'algorithme doit op érer à partir d'exemples
-non annotés ou la transformation du jeu de données et leur regroup ement (cluste-
-ring).
-Les transformations non sup ervisées d'un jeu de données sont des algorithmes
-qui créent une nouvelle représentation des données qui p ourraient être plus faciles
-à comprendre p our les humains ou d'autres algorithmes d'apprentissage automa-
-tique, par rapp ort à la représentation originale des données.
-Une application courante des transformations non sup ervisées est la réduction
-de dimensionnalité, qui prend une représentation en haute dimension des données,
-comprenant de nombreuses fonctionnalités, et trouve un nouveau moyen de re-
-présenter ces données, qui résume les caractéristiques essentielles avec moins de
-fonctionnalités.
-Les algorithmes de clustering, en revanche, partitionnent les données en group es
-distincts d'éléments similaires.
-- **L'apprentissage supervisé**
-L'apprentissage automatique sup ervisé est l'un des typ es d'apprentissage auto-
-matique les plus utilisés et les plus p erformants. Il est utilisé chaque fois qu'on veut
-prédire un résultat donné à partir d'une entrée donnée et qu'on a des exemples
-de paires entrée / sortie. On construit un mo dèle d'apprentissage automatique à
-partir de ces paires entrée / sortie, qui constituent l'ensemble de l'apprentissage.
-L'ob jectif est de faire des prévisions précises p our de nouvelles données jamais vues
-auparavant.
-L'apprentissage sup ervisé nécessite souvent un effort humain p our construire
-l'ensemble des données d'entraînement, mais il s'automatise et accélère ensuite une
-tâche par ailleurs lab orieuse ou infaisable.
+```
+tar -xzvf faster_inception_v2.tar.gz
+```
+Dans le répertoire , vous trouverez :
+
+* un proto de graphe (`graph.pbtxt`)
+* un point de contrôle (`model.ckpt.data-00000-of-0001`, `model.ckpt.index`,
+     `modèle.ckpt.meta`)
+* un proto de graphique frozen avec des poids intégrés au graphique en tant que constantes
+     (`frozen_inference_graph.pb`) à utiliser pour l'inférence prête à l'emploi (essayez
+     ceci dans le cahier Jupyter !)
+* un fichier de configuration (`pipeline.config`) qui a été utilisé pour générer le graphique.
+     Ceux-ci correspondent directement à un fichier de configuration dans le
+     [samples/configs](https://github.com/tensorflow/models/tree/master/research/object_detection/samples/configs))
+     répertoire mais souvent avec un seuil de score modifié. Dans le cas de la
+     modèles plus lourds Faster R-CNN, nous fournissons également une version du modèle qui
+     utilise un nombre très réduit de propositions pour la vitesse.
+
+
+## Conguration du modèle
