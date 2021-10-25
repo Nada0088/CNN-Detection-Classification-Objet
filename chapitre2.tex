@@ -1,0 +1,284 @@
+
+La conception d'une application informatique est une phase très importante car elle permet de définir l'ensemble de ses fonctionnalités et d'avoir un premier aperçu du travail à réaliser. Il convient donc de choisir les outils d'analyses les mieux adaptés au projet afin d'en avoir une vue claire et précise.\\
+Donc  nous allons modéliser notre application en utilisant un langage de modélisation objet qui est \textbf{Unified Modeling Language (UML)}\footnote{\textbf{UML} est un langage graphique de modélisation, il modélise l'ensemble des données et des traitements en élaborant des différents diagrammes qui permettent de préciser d'une manière claire la structure et le comportement d'un système.} et selon les phases du processus rational unified (RUP).
+La conception de notre application se base sur les diagrammes  des cas d'utilisation,diagramme de séquence, diagramme de classe.\\
+\section{Les phases du processus RUP(Rational Unified Process)}
+le rational unified process (RUP)est l'une des plus célèbres implémentations de la méthode \textbf{PU}\footnote{\textbf{PU :} cherche****}, permettant de donner un cadre au développement logiciel,répandant aux exigences fondamentales préconisées par les créateurs d'UML. 
+\subsection{phase expression des besoins}
+L'expression des besoins consiste à capturer les besoins aux quels  répond  l'application et les différentes interactions entre l'utilisateur et le système à travers les cas d'utilisation.
+
+\subsubsection{A. Besoins fonctionnels}
+Les besoins fonctionnels expriment une action qui doit être menée sur l'infrastructure à définir en réponse à une demande. C'est le besoin exprimé par le client.Pour cela, nous aurons:
+\begin{itemize}
+\item Le système doit  permettre  à l'utilisateur  de parcourir  et consulter les différents traitements. 
+\item Le système ne doit permettre qu'aux utilisateurs ayant droits d'accès d'effectuer  des traitements.
+\item Le système doit répondre automatiquement  à chaque requête introduite par  l'utilisateur.
+\item Le système doit être connecté au réseau.
+\item Le système doit alerter en cas de dysfonctionnement sur le réseau.
+\item Le système doit fournir les détails relatifs aux alertes.
+
+\end{itemize}
+\subsubsection{B. Besoins non fonctionnels}
+Les besoins non fonctionnels se regroupent autour des points suivant:
+\begin{itemize}
+\item Réduire au maximum le temps de chargement des données.
+\item Ergonomie et convivialité du produit.
+\item Facilité d'utilisation.
+\item Un accès sécurisé et  personnalisé.
+\end{itemize}
+
+
+
+
+%\subsection{Présentation d'UML (Unified Modeling Language) }
+%En conclusion, nous avons choisi de travailler avec UML parce qu'il exprime mieux la vue statique et dynamique du système d'information et pour notre application web, il est nécessaire de faire une analyse très approfondie pour pouvoir dégager les nécessités de développement ainsi que quelques scénarios d'exécution.
+
+
+\subsubsection{C. Définition  des  cas d'utilisation }
+Les cas d'utilisation constituent une technique qui permet de déterminer les besoins des utilisateurs et de capturer les exigences fonctionnelles d'un système en d'autres termes ils décrivent le comportement d'un système du point de vue ses utilisateurs ils décrivent les  interactions entre les utilisateurs d'un système et le système lui-même.
+\\subsection*{  Identification des cas d'utilisation}
+Le travail effectué au sein de cette partie permet d'identifier les acteurs mis en jeu et de visualiser les scénarios de cas d'utilisation de notre application qui permettent de bien superviser des équipements connectés sur un réseau.\\
+Ce diagramme est destiné à représenter les besoins des utilisateurs par rapport au système. Il constitue un des diagrammes les plus structurants dans l'analyse d'un système.
+\subsection*{ Identification des acteurs du système \\ }
+
+\textbf{Acteur :\\} L'acteur est une entité externe qui agit sur le système (opérateur, autre système...).\\
+Les acteurs qui interagissent avec cette application sont les suivants :
+\begin{itemize}
+\item \textbf{Administrateur :} désigne la personne charge de consulter toutes les informations concernant l'ensemble des équipements de réseau, et la gestion des objets (équipements, comptes utilisateurs …).
+\item \textbf{superviseur :} désigne la personne qui n'a le droit que de consulter les équipements que l'administrateur lui a attribué.
+\end{itemize}
+
+\paragraph{\\}
+\paragraph{\\}
+\paragraph{\\}
+
+\section{Les diagrammes des cas d'utilisation}
+Les différents diagrammes des cas d'utilisation du système sont les suivants :
+%---------------------------------------------
+\subparagraph{Diagrammes des cas d'utilisation globale}
+le diagramme suivant donne une vision globale du comportement fonctionnel de ce système.
+
+\paragraph{\\}
+\paragraph{\\}
+\paragraph{\\}
+
+\begin{figure}
+
+\centering
+% Requires \usepackage{graphicx}
+  \includegraphics[width=16cm]{casd_utilisationgenerale.png}\\
+  \caption{Diagramme de cas d'utilisation globale}
+\end{figure}
+
+
+
+
+
+
+%---------------------------------------------
+
+\begin{figure}
+\centering
+% Requires \usepackage{graphicx}
+  \includegraphics[width=15cm]{authenti.png}\\
+  \caption{Diagramme de cas d'utilisation  authentification }
+\end{figure}
+
+
+
+
+
+%------------------------------------------
+\begin{figure}
+\centering
+% Requires \usepackage{graphicx}
+  \includegraphics[width=15cm]{usergere.png}\\
+  \caption{Diagramme de cas d'utilisation gérer les utilisateurs }
+\end{figure}
+
+
+
+\paragraph{\\}
+
+%------------------------------------------
+\begin{figure}
+\centering
+% Requires \usepackage{graphicx}
+  \includegraphics[width=15cm]{gereequip.png}\\
+  \caption{Diagramme de cas d'utilisation gérer les équipements  }
+\end{figure}
+
+\paragraph{\\}
+\paragraph{\\}
+\paragraph{\\}
+\paragraph{\\}
+
+Après avoir identifier tous les acteurs du système et leur besoins. Nous allons présenter le déroulement des traitements dans la phase suivante.
+
+
+
+\newpage 
+
+\section{La phase d'analyse}
+L'analyse est une des phases les plus importantes dans le cycle de développement d'un logiciel. C'est là où on définit et on analyse clairement le problème, et on a exprimé les interactions entre les utilisateurs et le système à l'aide des scénarios et des diagrammes de séquence.
+\subsection{Définition de diagramme de séquence }
+Les diagrammes de séquences permettent de représenter les interactions entre objets selon un point de vue temporel. L'accent est mis sur la chronologie des envois de messages.
+\subsection{Les scénarios}
+\subsubsection{ Le cas d'utilisation Authentification }
+\begin{itemize}
+\item \textbf{L'acteur: }tous les acteurs.
+\item \textbf{But: }authentifier les utilisateurs du système.
+\item \textbf{Pré condition: }Le nom d'utilisateur et le mot de passe de l'utilisateur doivent être connus par le système.
+
+\item \textbf{Scénario principale: }
+\begin{enumerate}
+\item le superviseur lance l'application.
+\item le système affiche la page d'authentification
+\item le superviseur saisit le nom et le mot de passe puis valide.
+\item Le système vérifie le login et les droits de l'utilisateur.
+\item Le système affiche la page d'accueil de l'utilisateur.
+\end{enumerate}
+\item \textbf{Alternative du déroulement :\\}
+3. a. les champs sont vides\\
+4. a. le nom n'existe pas dans la base de donnée\\
+4. b. le mot de passe erroné \\
+\end{itemize}
+\newpage 
+%------------------------------------------
+\begin{figure}
+\centering
+% Requires \usepackage{graphicx}
+  \includegraphics[width=18cm]{sec1.png}\\
+  \caption{Diagramme de séquence d'authentification}
+\end{figure}
+
+\newpage 
+\subsubsection{ Description textuelle du cas d'utilisation  mettre à jour les équipements}
+\begin{itemize}
+\item \textbf{Cas d'utilisation: } mettre à jour  les équipements
+\item \textbf{L'acteur: } administrateur
+\item \textbf{Pré condition: }
+\begin{enumerate}
+\item Système connecté
+\item Utilisateur authentifié
+\item La présence des équipements qui seront mis à jour.
+\item Le système SNMP configuré dans le poste de travail.
+\item L'agent SNMP configuré dans l'équipement.
+\end{enumerate}
+\item \textbf{Poste condition :} mise à jour de la base de donnée
+\item \textbf{Scénario principale :}
+
+\begin{enumerate}
+\item 	L'administrateur choisit de modifier  un équipement.\\
+1. A. L'administrateur  remplie le formulaire d'information d'équipement \\
+1. B. Les informations seront change dans l'équipement.\\
+1. C. Le system affiche que le changement a été fait.\\
+\item 	L'administrateur choisit de supprimer un équipement.\\
+2. A. Le système supprime l'équipement. \\
+2. B. Le système affiche que l'équipement a été supprimé.\\
+\item 	L'administrateur choisit d'ajouter un équipement.\\
+3. A. Le system  envoie une requête pour recevoir la liste de type d'équipement.\\
+3. B. Le system affiche la liste des types d'équipement.\\
+3. C. L'administrateur remplie le formulaire d'information d'équipement et l'ajoute.\\
+3. E. Le système ajoute l'équipement.
+\end{enumerate}
+\item \textbf{Alternative du déroulement:\\}
+6. a. les informations remplie sont fausse\\
+6. b. le superviseur annule l'opération\\
+9. a. les informations remplie  sont fausse\\
+9. a. le superviseur annule la modification\\
+12. a. le superviseur annule la suppression
+\end{itemize}
+ 
+\begin{figure}
+\centering
+% Requires \usepackage{graphicx}
+  \includegraphics[width=14cm]{sec2.png}\\
+  \caption{Diagramme de séquence de mettre a jour l'équipement}
+\end{figure}
+\paragraph{\\}
+\newpage 
+\subsubsection{ Description textuelle du cas d'utilisation gérer les notifications}
+\begin{itemize}
+\item \textbf{Cas d'utilisateur: }gérerles notifications
+\item \textbf{L'auteur: } superviseur/administrateur
+\item \textbf{Pré condition: } l'existence des pannes et des alarmes
+\item \textbf{Poste condition:} mise à jour  des notifications
+\item \textbf{Déclencheur: } superviseur
+\item \textbf{Scénario principale: }
+\begin{enumerate}
+\item Le système affiche l'interface des notifications.
+\item L'administrateur  archive une notification.
+\item L'administrateur  classifier une panne comme panne régler.
+\item L'administrateur choisit d'avoir un rappel a cette panne.
+\end{enumerate}
+\item \textbf{Alternative du déroulement: \\}
+8. a. le superviseur ne confirme pas l'opération.\\
+8. b. le système ne supprime pas l'alarme.\\
+9. a. l'alarme reste toujours dans la liste des pannes.\\
+\end{itemize}
+\paragraph{\\}
+\newpage 
+\begin{figure}
+\centering
+% Requires \usepackage{graphicx}
+  \includegraphics[width=14cm]{sec3.png}\\
+  \caption{Diagramme de séquence de gère les notifications }
+\end{figure}
+\paragraph{\\}
+\newpage 
+\subsubsection{ Description textuelle du cas d'utilisation « gérer les utilisateurs »}
+\begin{itemize}
+\item \textbf{Cas d'utilisateur :}gérer les utilisateurs
+\item \textbf{L'auteur : }administrateur
+\item \textbf{Pré condition :}
+\item \textbf{Poste condition :} mise a jour de la base de donnée des utilisateurs
+\item \textbf{Déclencheur :} l'administrateur 
+\item \textbf{Scénario principale :}
+\begin{enumerate}
+\item L'administrateur choisit ajouter utilisateur
+\item L'administrateur remplie le formulaire et confirme
+\item L'administrateur click sur ajouter utilisateur 
+\item Le système l'ajoute à la liste des utilisateurs
+\item L'administrateur ajoute les équipements
+\item Le système l'ajoute à la liste des équipements de cet utilisateur
+\item L'administrateur choisit de mettre à jour un utilisateur  
+\item Le système affiche la liste des utilisateurs
+\item L'administrateur consulte cette liste
+\item L'administrateur sélectionne un utilisateur 
+\item Le système lui affiche la liste des équipements de cet utilisateur 
+\item L'administrateur choisit de modifier cet utilisateur
+\item L'administrateur remplie le formulaire et confirme
+\item Le système modifie l'utilisateur
+\item L'administrateur choisit de supprimer cet utilisateur
+\item Le système supprime cet utilisateur 
+\end{enumerate}
+\item \textbf{Alternative du déroulement :\\}
+4.a. l'utilisateur existe déjà dans la base de donnée \\
+4.b. le nom ou le mot de passe n'est pas valide\\
+4.c. l'administrateur ne confirme pas l'opération\\
+8.a. l'administrateur ne confirme pas l'opération\\
+\end{itemize}
+
+%------------------------------------------
+\begin{figure}
+\centering
+% Requires \usepackage{graphicx}
+  \includegraphics[width=15cm]{sec4.png}\\
+  \caption{Diagramme de séquence de gère les utilisateurs }
+\end{figure}
+%------------------------------------------
+\paragraph{\\}
+\paragraph{\\}
+
+
+Cette phase a permis d'exprimer les interactions entre l'utilisateur  et le système à l'aide des scénarios et du diagramme de séquence .dans la phase suivante on réalise la conception de système.
+
+
+\subsection{Phase Conception }
+La phase de conception a pour objectif la rechercher de comment le système va être réalisé contrairement à l'analyse qui cherche « quoi faire ».
+\subsection{Définition du diagramme de classes}
+
+ Le diagramme de classes un schéma qui représente les classes du système et les différentes relations entre celles-ci.
+\\
+La figure suivante représente le diagramme de classes : 
